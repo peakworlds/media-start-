@@ -1,0 +1,60 @@
+# Peak Haven Australia — .gitignore
+# Ghost Protocol: Never commit sensitive operational data to any public repository.
+
+# Environment & Secrets
+.env
+.env.*
+*.key
+*.pem
+secrets/
+config/local.json
+
+# Node / npm
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Sensitive Brand & Legal (Never expose publicly)
+assets/financial_data/
+access_guides/credentials/
+hr/contractor_agreements/
+legal/signed/
+
+# Temporary
+*.tmp
+*.log
+*.swp
+*.bak
+tmp/
+
+# Presentation build artifacts (regenerate with build_presentations.py)
+presentations/*.html
